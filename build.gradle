@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'Main' // Change this if your package is different
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // No extra dependencies needed for basic Java
+}
+
+tasks.named('run') {
+    standardInput = System.in // Enables console input
+}
